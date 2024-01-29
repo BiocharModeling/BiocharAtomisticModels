@@ -1,4 +1,4 @@
-# BiocharAtomisticModels
+# Biochar Atomistic Models
 This new approach, implemented in Python and visualized using PyMOL, considers chemical constraints and characterization data. It incorporates polyaromatic structures and defects, randomly assigns functional groups and radicals, creates a cross-linked network between clusters, and captures porosity at a large-scale molecular level. 
 
 The process begins with the Aromatic Cluster Size Distribution obtained from BPCA data (BPCA.py). Then, quantitative NMR data is employed to integrate functional groups into the aromatic structures. These functional groups encompass ether linkages, aliphatic chains (including CH3, C2H5, and C3H7–the last for biochar at 400°C), carbonyl functionalities, and carboxyl groups defective carbons. Additionally, ammonia, pyridine, hydroxyl, and pyrrolic groups are introduced to the structures to align with elemental analysis, FTIR, and XPS data. Finally, the H/C ratio establishes a cross-linked network between the modified clusters. Figure 1 illustrates this approach.
