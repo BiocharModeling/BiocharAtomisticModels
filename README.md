@@ -13,4 +13,4 @@ During the modification process, the clusters are strategically positioned in an
 ![plot](./Figures/2.png)
 ### Figure 2. Approach to obtain the solid representation of biochar. 
 
-LAMMPS is used to construct a molecular dynamics-based biochar model. The simulation uses an NPT ensemble at 298 K and 150 atm, compressing until the target density is reached and maintaining stability. The F/C/H force field is applied with a 0.07 fs timestep. Simulation duration varies from 1 to 5 ns, determined by system equilibrium.
+LAMMPS is used to construct a molecular dynamics-based biochar model. The simulation uses an NPT ensemble at 298 K and 150 atm, compressing until the target density is reached and maintaining stability. The C/H/O/N force field is applied with a 0.07 fs timestep. Simulation duration varies from 1 to 5 ns, determined by system equilibrium.
