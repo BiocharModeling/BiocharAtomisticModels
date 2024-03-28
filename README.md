@@ -14,3 +14,5 @@ During the modification process, the clusters are strategically positioned in an
 ### Figure 2. Approach to obtain the 3D representation of biochar. 
 
 LAMMPS is used to construct a molecular dynamics-based biochar model. The simulation employs a canonical ensemble (NVT) at 298 K to mimic a compression process by reducing the simulation box size by < 1% in each time step until the target density is achieved. The temperature ensures a nonreactive environment by preventing bonds from breaking and forming. The C/H/O/N force field is applied with a 0.07 fs timestep.
+
+###  How to use it? 
