@@ -8,7 +8,7 @@ The procedure starts with the ACSD obtained from BPCA data, followed by utilizin
 *Randomly select n-molecules to include the n-functional groups needed. Molecules can be selected multiple times, except for the inclusion of holes. 
 Modifications are sequentially illustrated for the same molecule, but the process involves randomly selecting the molecule for each step. 
 
-During the modification process, the clusters are strategically positioned in an "unoccupied" space to prevent molecule overlap and facilitate the modification procedure. As a result, the final coordinates of the modified clusters are converted from a PDB (Protein Data Bank) file to a LAMMPS data file with an atom-style charge, and the file conversion is carried out using OVITO; see Figure 2. 
+During construction stages, the structures are in a well-dispersed grid to prevent molecule overlap and facilitate modification. After the cross-linking, the grid is reconstructed to place all the molecules closer, mimicking a gas phase. As a result, the final coordinates of the modified clusters are converted from a Protein Data Bank (PDB) file to a Large-scale Atomic/Molecular Massively Parallel Simulator (LAMMPS) data file with an atom-style charge, and the file conversion is carried out using OVITO; see Figure 6. LAMMPS is used to construct an MD-generated biochar representation
 
 ![plot](./Figures/2.png)
 ### Figure 2. Approach to obtain the 3D representation of biochar. 
