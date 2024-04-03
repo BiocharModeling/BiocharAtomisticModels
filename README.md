@@ -16,5 +16,6 @@ During construction stages, the structures are in a well-dispersed grid to preve
 LAMMPS is used to construct a molecular dynamics-based biochar model. The simulation employs a canonical ensemble (NVT) at 298 K to mimic a compression process by reducing the simulation box size by < 1% in each time step until the target density is achieved. The temperature ensures a nonreactive environment by preventing bonds from breaking and forming. The C/H/O/N force field is applied with a 0.07 fs timestep.
 
 ###  How to use it? 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V4YJs-slrXk?si=_Ehlx5kV45CU3Chc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Watch the video](https://img.youtube.com/vi/watch?v=V4YJs-slrXk/maxresdefault.jpg)](https://www.youtube.com/watch?v=V4YJs-slrXk)
+
 
