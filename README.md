@@ -25,7 +25,12 @@ cd BiocharAtomisticBuilder
 ###  [How to run?](https://www.youtube.com/watch?v=V4YJs-slrXk)
 
 ### Contributing
-We are open to contributing if you would like to make improvements or suggest modifications.
+We are open to contributing if you want to improve or suggest modifications. If you have issues running the code, don't hesitate to contact us; we will do our best to solve them. 
 
-### Contact
-Email: v.sierrajimenez@wsu.edu
+### Contact us 
+**Email**: 
+[Valentina Sierra](mailto:v.sierrajimenez@wsu.edu) <br>
+**Address:** <br>
+Biological Systems Engineering <br>
+Washington State University <br> 
+Pullman, WA, USA
