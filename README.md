@@ -15,7 +15,7 @@ LAMMPS is used to construct a molecular dynamics-based biochar model. The simula
 
 ### How to use it?
 
-$ git clone https://github.com/BiocharModeling/BiocharAtomisticModels
+[$ git clone https://github.com/BiocharModeling/BiocharAtomisticModels](https://github.com/BiocharModeling/BiocharAtomisticModels.git) 
 $ cd BiocharAtomisticBuilder
 Install PyMol (https://github.com/schrodinger/pymol-open-source?tab=readme-ov-file)
 Connect PyMol to Jupyter Notebook (https://pymolwiki.org/index.php/Jupyter)
