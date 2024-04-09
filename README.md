@@ -16,8 +16,7 @@ LAMMPS is used to construct a molecular dynamics-based biochar model. We employe
 You can use any other tool to obtain the 3D representation from the PBD file obtained after running Biochar.ipynb 
 
 > [!NOTE]
-- To construct the atomistic representation, you require, at a minimum, the characterization data from the ultimate analysis, <sup>13</sup>C NMR (quantitative), helium density, and BPCA yields.
-- To validate the atomistic representation, you can use any characterization technique that gives information about the atomistic structure at the molecular level. Here, we employed LDI-FTICR-MS to validate the molecular weight distribution and ESR to validate the distribution of oxygen-centered radicals.
+>  To construct the atomistic representation, you require, at a minimum, the characterization data from the ultimate analysis, <sup>13</sup>C NMR (quantitative), helium density, and BPCA yields. To validate the atomistic representation, you can use any characterization technique that gives information about the atomistic structure at the molecular level. Here, we employed LDI-FTICR-MS to validate the molecular weight distribution and ESR to validate the distribution of oxygen-centered radicals.
 
 > [!TIP]
 > If you don't have the BPCA yields, you could use the data in the database file as a first approximation. However, it will increase the error by more than 20%
