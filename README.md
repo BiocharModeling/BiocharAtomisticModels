@@ -22,7 +22,7 @@ cd BiocharAtomisticBuilder
 - Install PyMol (https://github.com/schrodinger/pymol-open-source?tab=readme-ov-file)
 - Connect PyMol to Jupyter Notebook (https://pymolwiki.org/index.php/Jupyter)
 
-###  [How to run?](https://www.youtube.com/watch?v=V4YJs-slrXk)
+###  [How to run it :computer:?](https://www.youtube.com/watch?v=V4YJs-slrXk)
 
 ### Contributing
 We are open to contributing if you want to improve or suggest modifications. If you have issues running the code, don't hesitate to contact us; we will do our best to solve them. 
