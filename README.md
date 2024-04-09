@@ -15,6 +15,16 @@ LAMMPS is used to construct a molecular dynamics-based biochar model. We employe
 
 You can use any other tool to obtain the 3D representation from the PBD file obtained after running Biochar.ipynb 
 
+> [!NOTE]
+> You will need at least the characterization data from the ultimate analysis, <sup>13</sup>C NMR (quantitative), and BPCA yields
+
+> [!TIP]
+> If you don't have the BPCA yields, you can use data from the literature or the data in the database file. However, this will increase the error by up to 30%
+
+> [!IMPORTANT]
+> Python 3.10.13
+> PyMOL 2.5.5
+
 ### How to use it?
 
 ```
