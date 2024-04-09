@@ -15,14 +15,15 @@ LAMMPS is used to construct a molecular dynamics-based biochar model. We employe
 
 You can use any other tool to obtain the 3D representation from the PBD file obtained after running Biochar.ipynb 
 
-> [!Note]
-> You will need at least the characterization data from the ultimate analysis, <sup>13</sup>C NMR (quantitative), and BPCA yields
+> [!NOTE]
+> To construct the atomistic representation, you require, at a minimum, the characterization data from the ultimate analysis, <sup>13</sup>C NMR (quantitative), helium density, and BPCA yields
+> To validate the atomistic representation, you can use any characterization technique that gives information about the atomistic structure at the molecular level. Here, we employed LDI-FTICR-MS to validate the molecular weight distribution and ESR to validate the distribution of oxygen-centered radicals.
 
-> [!Tip]
-> If you don't have the BPCA yields, you can use data from the literature or the data in the database file. However, this will increase the error by up to 30%
-
-> [!Version used]
-> Python 3.10.13 and PyMOL 2.5.5
+> [!TIP]
+> If you don't have the BPCA yields, you could use the data in the database file as a first approximation. However, it will increase the error by more than 20%
+ 
+> [!IMPORTANT]
+> Version used: Python 3.10.13 and PyMOL 2.5.5
 
 ### How to use it?
 
