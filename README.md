@@ -11,7 +11,9 @@ The structures are in a well-dispersed grid during construction stages to preven
 ![plot](./Figures/2.png)
 ### Figure 2. Approach to obtain the 3D representation of biochar. 
 
-LAMMPS is used to construct a molecular dynamics-based biochar model. The simulation employs a canonical ensemble (NVT) at 298 K to mimic a compression process by reducing the simulation box size by < 1% in each time step until the target density is achieved. The temperature ensures a nonreactive environment by preventing bonds from breaking and forming. The C/H/O/N force field is applied with a 0.07 fs timestep.
+LAMMPS is used to construct a molecular dynamics-based biochar model. We employed a canonical ensemble (NVT) at 298 K to mimic a compression process by reducing the simulation box size by < 1% in each time step until the target density is achieved. The temperature ensures a nonreactive environment by preventing bonds from breaking and forming. The C/H/O/N force field is applied with a 0.07 fs timestep.
+
+You can use any other tool to obtain the 3D representation from the PBD file obtained after running Biochar.ipynb 
 
 ### How to use it?
 
