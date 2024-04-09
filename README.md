@@ -22,8 +22,7 @@ You can use any other tool to obtain the 3D representation from the PBD file obt
 > If you don't have the BPCA yields, you can use data from the literature or the data in the database file. However, this will increase the error by up to 30%
 
 > [!IMPORTANT]
-> Python 3.10.13
-> PyMOL 2.5.5
+> Python 3.10.13 and PyMOL 2.5.5
 
 ### How to use it?
 
