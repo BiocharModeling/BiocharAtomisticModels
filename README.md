@@ -1,5 +1,5 @@
 # Biochar Atomistic Models
-This new approach, implemented in Jupyter Notebook and visualized using PyMOL, considers chemical constraints and characterization data. It incorporates polyaromatic structures and ring defects, randomly assigns functional groups and radicals, creates a cross-linked network between clusters, and captures porosity at a large-scale molecular level. Figure 1 illustrates this approach.
+This new approach, implemented in Jupyter Notebook and visualized using PyMOL, considers chemical constraints and characterization data. It incorporates polyaromatic structures and ring defects, randomly assigns functional groups and radicals, creates a cross-linked network between clusters, and captures microporosity at a large-scale molecular level. Figure 1 illustrates this approach.
 
 ![plot](./Figures/1.png)
 ### Figure 1. Methodology to interpret characterization data and obtain atomistic representations of biochar. 
@@ -13,16 +13,22 @@ The structures are in a well-dispersed grid during construction stages to preven
 
 LAMMPS is used to construct a molecular dynamics-based biochar model. We employed a canonical ensemble (NVT) at 298 K to mimic a compression process by reducing the simulation box size by < 1% in each time step until the target density is achieved. The temperature ensures a nonreactive environment by preventing bonds from breaking and forming. The C/H/O/N force field is applied with a 0.07 fs timestep.
 
-You can use any other tool to obtain the 3D representation from the PBD file obtained after running Biochar.ipynb 
-
 > [!NOTE]
 >  To construct the atomistic representation, you require, at a minimum, the characterization data from the ultimate analysis, <sup>13</sup>C NMR (quantitative), helium density, and BPCA yields. To validate the atomistic representation, you can use any characterization technique that gives information about the atomistic structure at the molecular level. Here, we employed LDI-FTICR-MS to validate the molecular weight distribution and ESR to validate the distribution of oxygen-centered radicals.
 
 > [!TIP]
-> If you want to obtain the representation for biochar and don't have the BPCA yields for your specific material, you could use the data in the database file as a first approximation. However, it will increase the error by more than 20% in your final atomistic representation. 
+> If you want to obtain the representation for biochar and don't have the BPCA yields for your specific material, you could use the data in the database file as a first approximation. 
  
+> [!CAUTION]
+> However, it will increase the error by more than 20% in your final atomistic representation.
+
 > [!IMPORTANT]
+> You can use any other tool to obtain the 3D representation from the PBD file obtained after running Biochar.ipynb 
+
+> [!WARNING]
 > Version used: Python 3.10.13 and PyMOL 2.5.5
+
+
 
 ### How to use it?
 
