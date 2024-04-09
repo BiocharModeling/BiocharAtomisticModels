@@ -28,8 +28,6 @@ LAMMPS is used to construct a molecular dynamics-based biochar model. We employe
 > [!WARNING]
 > Version used: Python 3.10.13 and PyMOL 2.5.5
 
-
-
 ### How to use it?
 
 ```
