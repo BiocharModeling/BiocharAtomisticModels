@@ -14,7 +14,7 @@ The structures are in a well-dispersed grid during construction stages to preven
 LAMMPS is used to construct a molecular dynamics-based biochar model. We employed a canonical ensemble (NVT) at 298 K to mimic a compression process by reducing the simulation box size by < 1% in each time step until the target density is achieved. The temperature ensures a nonreactive environment by preventing bonds from breaking and forming. The C/H/O/N force field is applied with a 0.07 fs timestep.
 
 > [!NOTE]
->  To construct the atomistic representation, you require, at a minimum, the characterization data from the ultimate analysis, <sup>13</sup>C NMR (quantitative), helium density, and BPCA yields. To validate the atomistic representation, you can use any characterization technique that gives information about the atomistic structure at the molecular level. Here, we employed LDI-FTICR-MS to validate the molecular weight distribution and ESR to validate the distribution of oxygen-centered radicals.
+> To construct the atomistic representation, you require, at a minimum, the characterization data from the ultimate analysis, <sup>13</sup>C NMR (quantitative), helium density, and BPCA yields. To validate the atomistic representation, you can use any characterization technique that gives information about the atomistic structure at the molecular level. Here, we employed LDI-FTICR-MS to validate the molecular weight distribution and ESR to validate the distribution of oxygen-centered radicals.
 
 > [!TIP]
 > If you want to obtain the representation for biochar and don't have the BPCA yields for your specific material, you could use the data in the database file as a first approximation. 
@@ -27,21 +27,6 @@ LAMMPS is used to construct a molecular dynamics-based biochar model. We employe
 
 > [!WARNING]
 > Version used: Python 3.10.13 and PyMOL 2.5.5
->
-> > [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
 
 ### How to use it?
 
