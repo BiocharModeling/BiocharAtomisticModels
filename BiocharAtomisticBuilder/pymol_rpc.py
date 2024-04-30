@@ -339,7 +339,7 @@ class pymol_jupyter_builder:
         self.refresh_model()
         self.show_label()
         return
-
+    
     def Attach_C2H4CH3(self,object1,h_index):
         self.server.do('select at1, %s & index %s' % (object1, h_index))
         self.server.do('load ./functional_groups/propane.mol2')
@@ -498,6 +498,7 @@ class pymol_jupyter_builder:
     def check_main(self, object, idx):
         self.server.do('save test.mol,%s' % object)
         mol = AllChem.MolFromMolFile('test.mol',sanitize=False,removeHs=False)
+        main_atom_idx= [atom.GetIdx()+1 for atom in mol.GetAtoms() if atom.GetSymbol() != 'H']
         main_atom    = [atom for atom in mol.GetAtoms() if atom.GetSymbol() != 'H']
         main_atom_nn = [[n for n in atom.GetNeighbors() if n.GetSymbol() != 'H'] for atom in mol.GetAtoms() if atom.GetSymbol() != 'H']
 
@@ -510,115 +511,7 @@ class pymol_jupyter_builder:
         subprocess.call('rm test.mol',shell=True)
         return check_atom_symbol, check_atom_nn_symbol, check_atom_ar, check_atom_inring
 
-    def Change_Element_SitoC(self,object1,index):
-        success = False
-        self.server.do('zoom %s' % object1)
-        s, ns, ar_flag, ring_flag = self.check_main(object1,index)
-        if s == 'Si':
-            self.server.do('select at1, %s & index %s' % (object1, index))
-            self.server.do('edit at1')
-            self.server.do('replace C, 4, 4')
-            self.server.do('unpick')
-            self.server.do('delete at1')
-            self.server.do('rebuild all')
-            #self.server.do('clean %s' % object1)
-            success = True
-        self.refresh_model()
-        self.show_label()
-        return success
-
-    def Change_Element_SitoO(self,object1,index):
-        success = False
-        self.server.do('zoom %s' % object1)
-        s, ns, ar_flag, ring_flag = self.check_main(object1,index)
-        if s == 'Si' and len(ns) == 2 and ('O' not in ns)  and ('N' not in ns):
-            self.server.do('select at1, %s & index %s' % (object1, index))
-            self.server.do('edit at1')
-            self.server.do('valence 1, at1, elem *')
-            self.server.do('replace O, 4, 2')
-            self.server.do('unpick')
-            self.server.do('delete at1')
-            self.server.do('rebuild all')
-            #self.server.do('clean %s' % object1)
-            success = True
-        elif s == 'Si' and len(ns) == 1 and ('O' not in ns)  and ('N' not in ns):
-            self.server.do('select at1, %s & index %s' % (object1, index))
-            self.server.do('edit at1')
-            self.server.do('replace O, 4, 2')
-            self.server.do('unpick')
-            self.server.do('delete at1')
-            self.server.do('rebuild all')
-            #self.server.do('clean %s' % object1)
-            success = True
-        self.refresh_model()
-        self.show_label()
-        return success
-
-    def Change_Element_SitoN(self,object1,index):
-        success = False
-        self.server.do('zoom %s' % object1)
-        s, ns, ar_flag, ring_flag = self.check_main(object1,index)
-        if s == 'Si' and len(ns) == 3 and ('O' not in ns)  and ('N' not in ns):
-            self.server.do('select at1, %s & index %s' % (object1, index))
-            self.server.do('edit at1')
-            self.server.do('valence 1, at1, elem *')
-            self.server.do('replace N, 4, 3')
-            self.server.do('unpick')
-            self.server.do('delete at1')
-            self.server.do('rebuild all')
-            self.server.do('clean %s' % object1)
-            success = True
-        elif s == 'Si' and len(ns) == 2 and ('O' not in ns)  and ('N' not in ns):
-            self.server.do('select at1, %s & index %s' % (object1, index))
-            self.server.do('edit at1')
-            #self.server.do('valence 1, at1, elem *')
-            self.server.do('replace N, 4, 3')
-            self.server.do('unpick')
-            self.server.do('delete at1')
-            self.server.do('rebuild all')
-            self.server.do('clean %s' % object1)
-            success = True
-        elif s == 'Si' and len(ns) == 1 and ('O' not in ns)  and ('N' not in ns):
-            self.server.do('select at1, %s & index %s' % (object1, index))
-            self.server.do('edit at1')
-            #self.server.do('valence 1, at1, elem *')
-            self.server.do('replace N, 4, 3')
-            self.server.do('unpick')
-            self.server.do('delete at1')
-            self.server.do('rebuild all')
-            self.server.do('clean %s' % object1)
-            success = True
-        self.refresh_model()
-        self.show_label()
-        return success
-
-    def Change_Element_SitoS(self,object1,index):
-        success = False
-        self.server.do('zoom %s' % object1)
-        s, ns, ar_flag, ring_flag = self.check_main(object1,index)
-        if s == 'Si' and len(ns) == 2 and ('O' not in ns)  and ('N' not in ns):
-            self.server.do('select at1, %s & index %s' % (object1, index))
-            self.server.do('edit at1')
-            self.server.do('valence 1, at1, elem *')
-            self.server.do('replace S, 4, 2')
-            self.server.do('unpick')
-            self.server.do('delete at1')
-            self.server.do('rebuild all')
-            self.server.do('clean %s' % object1)
-            success = True
-        elif s == 'Si' and len(ns) == 1 and ('O' not in ns)  and ('N' not in ns):
-            self.server.do('select at1, %s & index %s' % (object1, index))
-            self.server.do('edit at1')
-            self.server.do('replace S, 4, 2')
-            self.server.do('unpick')
-            self.server.do('delete at1')
-            self.server.do('rebuild all')
-            self.server.do('clean %s' % object1)
-            success = True
-        self.refresh_model()
-        self.show_label()
-        return success
-
+  
     def Change_Element_CtoO(self,object1,index):
         success = False
         self.server.do('zoom %s' % object1)
@@ -664,7 +557,7 @@ class pymol_jupyter_builder:
         elif s == 'C' and len(ns) == 2 and ('O' not in ns)  and ('N' not in ns):
             self.server.do('select at1, %s & index %s' % (object1, index))
             self.server.do('edit at1')
-            #self.server.do('valence 1, at1, elem *')
+            self.server.do('valence 1, at1, elem *')
             self.server.do('replace N, 4, 3')
             self.server.do('unpick')
             self.server.do('delete at1')
@@ -674,7 +567,7 @@ class pymol_jupyter_builder:
         elif s == 'C' and len(ns) == 1 and ('O' not in ns)  and ('N' not in ns):
             self.server.do('select at1, %s & index %s' % (object1, index))
             self.server.do('edit at1')
-            #self.server.do('valence 1, at1, elem *')
+            self.server.do('valence 1, at1, elem *')
             self.server.do('replace N, 4, 3')
             self.server.do('unpick')
             self.server.do('delete at1')
