@@ -1,7 +1,7 @@
 # Biochar Atomistic Models
 This new approach, implemented in Jupyter Notebook and visualized using PyMOL, considers chemical constraints and characterization data. It incorporates polyaromatic structures and ring defects, randomly assigns functional groups and radicals, creates a cross-linked network between clusters, and captures microporosity at a large-scale molecular level. Figure 1 illustrates this approach.
 
-![plot](./Figures/1.pdf)
+<object data=".../Figures/1.pdf" width="1000" height="1000" type='application/pdf'></object>
 ### Figure 1. Methodology to interpret characterization data and obtain atomistic representations of biochar. 
 *Randomly select n-molecules to include the n-functional groups needed. Molecules can be selected multiple times, except for the inclusion of holes. 
 Modifications are sequentially illustrated for the same molecule, but the process involves randomly selecting the molecule for each step. 
