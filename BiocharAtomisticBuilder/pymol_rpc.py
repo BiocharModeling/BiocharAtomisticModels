@@ -189,7 +189,7 @@ class pymol_jupyter_builder:
             object_names = list(object_masses.keys())
         max_num = len(object_names)
         for i in range(max_num):
-            new_object_name = 'combined%s' % (i+1)  
+            new_object_name = 'combined_a%s' % (i+1)  
             if new_object_name not in object_names:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
@@ -198,7 +198,7 @@ class pymol_jupyter_builder:
         self.refresh_model()
         self.clear_label()
         return new_object_name
-     
+
     def Crosslink_mols2(self,object1,index1,object2,index2):
         self.server.do('select at1, %s & index %s' % (object1, index1))
         self.server.do('select at2, %s & index %s' % (object2, index2))
@@ -217,7 +217,7 @@ class pymol_jupyter_builder:
             object_names = list(object_masses.keys())
         max_num = len(object_names)
         for i in range(max_num):
-            new_object_name = 'combined_b%s' % (i+1)
+            new_object_name = 'combined_b%s' % (i+1)  
             if new_object_name not in object_names:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
@@ -226,7 +226,7 @@ class pymol_jupyter_builder:
         self.refresh_model()
         self.clear_label()
         return new_object_name
-    
+     
     def Crosslink_mols3(self,object1,index1,object2,index2):
         self.server.do('select at1, %s & index %s' % (object1, index1))
         self.server.do('select at2, %s & index %s' % (object2, index2))
@@ -242,7 +242,7 @@ class pymol_jupyter_builder:
         # Check if object_names is empty
         while not object_names:
             object_masses = self.Get_Object_Masses()
-            object_names = list(object_masses.keys()) 
+            object_names = list(object_masses.keys())
         max_num = len(object_names)
         for i in range(max_num):
             new_object_name = 'combined_c%s' % (i+1)
@@ -270,7 +270,7 @@ class pymol_jupyter_builder:
         # Check if object_names is empty
         while not object_names:
             object_masses = self.Get_Object_Masses()
-            object_names = list(object_masses.keys())  
+            object_names = list(object_masses.keys()) 
         max_num = len(object_names)
         for i in range(max_num):
             new_object_name = 'combined_d%s' % (i+1)
@@ -279,6 +279,62 @@ class pymol_jupyter_builder:
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
         #self.server.do('clean %s' % new_object_name)
+        self.refresh_model()
+        self.clear_label()
+        return new_object_name
+    
+    def Crosslink_mols5(self,object1,index1,object2,index2):
+        self.server.do('select at1, %s & index %s' % (object1, index1))
+        self.server.do('select at2, %s & index %s' % (object2, index2))
+        self.server.do('edit at1, at2')
+        self.server.do('fuse')
+        self.server.do('unpick')
+        self.server.do('delete at1')
+        self.server.do('delete at2')
+        self.server.do('delete %s' % object1)
+        self.server.do('rebuild %s' % object2)
+        object_masses= self.Get_Object_Masses()
+        object_names = list(object_masses.keys())
+        # Check if object_names is empty
+        while not object_names:
+            object_masses = self.Get_Object_Masses()
+            object_names = list(object_masses.keys())  
+        max_num = len(object_names)
+        for i in range(max_num):
+            new_object_name = 'combined_e%s' % (i+1)
+            if new_object_name not in object_names:
+                break
+        self.server.do('set_name %s, %s' % (object2,new_object_name))
+        self.server.do('zoom %s' % new_object_name)
+        #self.server.do('clean %s' % new_object_name)
+        self.refresh_model()
+        self.clear_label()
+        return new_object_name
+    
+    def Crosslink_mols6(self,object1,index1,object2,index2):
+        self.server.do('select at1, %s & index %s' % (object1, index1))
+        self.server.do('select at2, %s & index %s' % (object2, index2))
+        self.server.do('edit at1, at2')
+        self.server.do('fuse')
+        self.server.do('unpick')
+        self.server.do('delete at1')
+        self.server.do('delete at2')
+        self.server.do('delete %s' % object1)
+        self.server.do('rebuild %s' % object2)
+        object_masses= self.Get_Object_Masses()
+        object_names = list(object_masses.keys())
+        # Check if object_names is empty
+        while not object_names:
+            object_masses = self.Get_Object_Masses()
+            object_names = list(object_masses.keys())  
+        max_num = len(object_names)
+        for i in range(max_num):
+            new_object_name = 'combined_f%s' % (i+1)
+            if new_object_name not in object_names:
+                break
+        self.server.do('set_name %s, %s' % (object2,new_object_name))
+        self.server.do('zoom %s' % new_object_name)
+       #self.server.do('clean %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
