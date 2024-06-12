@@ -33,7 +33,7 @@ cd BiocharAtomisticBuilder
 ###  [How to run it? :computer:](https://www.youtube.com/watch?v=V4YJs-slrXk)
 
 ### Contributing :bulb:
-We welcome your collaboration and input to help us enhance this project. If you have improvements or modifications to suggest or encounter any issues running the code, please contact us. We're here to work together and resolve any problems you may face. Let's create something great together!
+We welcome your collaboration and input to help us enhance this project. Please get in touch with us if you have improvements or modifications to suggest or encounter any issues running the code. We're here to work together and resolve any problems you may face. Let's create something great together!
 
 ### Contact us :email:
 **Email**: 
