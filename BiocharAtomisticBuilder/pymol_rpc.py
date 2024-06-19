@@ -194,7 +194,8 @@ class pymol_jupyter_builder:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
-        #self.server.do('clean %s' % new_object_name)
+        self.server.do('clean %s' % new_object_name)
+        self.server.do('sculpt %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
@@ -222,7 +223,8 @@ class pymol_jupyter_builder:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
-        #self.server.do('clean %s' % new_object_name)
+        self.server.do('clean %s' % new_object_name)
+        self.server.do('sculpt %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
@@ -250,7 +252,8 @@ class pymol_jupyter_builder:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
-        #self.server.do('clean %s' % new_object_name)
+        self.server.do('clean %s' % new_object_name)
+        self.server.do('sculpt %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
@@ -278,7 +281,8 @@ class pymol_jupyter_builder:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
-        #self.server.do('clean %s' % new_object_name)
+        self.server.do('clean %s' % new_object_name)
+        self.server.do('sculpt %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
@@ -306,7 +310,8 @@ class pymol_jupyter_builder:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
-        #self.server.do('clean %s' % new_object_name)
+        self.server.do('clean %s' % new_object_name)
+        self.server.do('sculpt %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
@@ -334,7 +339,8 @@ class pymol_jupyter_builder:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
-       #self.server.do('clean %s' % new_object_name)
+        self.server.do('clean %s' % new_object_name)
+        self.server.do('sculpt %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
@@ -482,7 +488,7 @@ class pymol_jupyter_builder:
         self.show_label()
         return
 
-    def Attach_Carboxyl(self,object1,h_index):
+    def Attach_Ester(self,object1,h_index):
         self.server.do('select at1, %s & index %s' % (object1, h_index))
         self.server.do('load ./functional_groups/cooh.mol2')
         self.server.do('select at2, %s & name %s' % ('cooh', 'H2'))
@@ -499,7 +505,8 @@ class pymol_jupyter_builder:
         self.show_label()
         return
 
-    def Attach_Ester(self,object1,h_index):
+    # This would include 3HC-COO-CH2-C group
+    def Attach_Ester_2(self,object1,h_index):
         self.server.do('select at1, %s & index %s' % (object1, h_index))
         self.server.do('load ./functional_groups/ethyl_acetate.mol2')
         self.server.do('select at2, %s & name %s' % ('ethyl_acetate', 'H1'))
@@ -549,6 +556,22 @@ class pymol_jupyter_builder:
         self.refresh_model()
         self.show_label()
         return
+    def Attach_Carbox(self,object1,h_index):
+        self.server.do('select at1, %s & index %s' % (object1, h_index))
+        self.server.do('load ./functional_groups/cooh_2.mol2')
+        self.server.do('select at2, %s & name %s' % ('cooh_2', 'H1'))
+        self.server.do('edit at2, at1')
+        self.server.do('fuse')
+        self.server.do('unpick')
+        self.server.do('delete at1')
+        self.server.do('delete at2')
+        self.server.do('delete %s' % 'cooh_2')
+        self.server.do('rebuild all')
+        self.server.do('zoom %s' % object1)
+        self.server.do('clean %s' % object1)
+        self.refresh_model()
+        self.show_label()
+        return
 
 
     def check_main(self, object, idx):
@@ -585,7 +608,7 @@ class pymol_jupyter_builder:
         elif s == 'C' and len(ns) == 1 and ('O' not in ns)  and ('N' not in ns):
             self.server.do('select at1, %s & index %s' % (object1, index))
             self.server.do('edit at1')
-            #self.server.do('valence 1, at1, elem *')
+            self.server.do('valence 1, at1, elem *')
             self.server.do('replace O, 4, 2')
             self.server.do('unpick')
             self.server.do('delete at1')
@@ -595,7 +618,7 @@ class pymol_jupyter_builder:
         self.refresh_model()
         self.show_label()
         return success
-
+    
     def Change_Element_CtoN(self,object1,index):
         success = False
         self.server.do('zoom %s' % object1)
