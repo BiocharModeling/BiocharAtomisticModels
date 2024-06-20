@@ -174,6 +174,7 @@ class pymol_jupyter_builder:
     def Crosslink_mols1(self,object1,index1,object2,index2):
         self.server.do('select at1, %s & index %s' % (object1, index1))
         self.server.do('select at2, %s & index %s' % (object2, index2))
+        self.server.do('align at2, at1')
         self.server.do('edit at1, at2')
         self.server.do('fuse')
         self.server.do('unpick')
@@ -195,7 +196,6 @@ class pymol_jupyter_builder:
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
         self.server.do('clean %s' % new_object_name)
-        self.server.do('sculpt %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
@@ -203,6 +203,7 @@ class pymol_jupyter_builder:
     def Crosslink_mols2(self,object1,index1,object2,index2):
         self.server.do('select at1, %s & index %s' % (object1, index1))
         self.server.do('select at2, %s & index %s' % (object2, index2))
+        self.server.do('align at2, at1')
         self.server.do('edit at1, at2')
         self.server.do('fuse')
         self.server.do('unpick')
@@ -224,7 +225,6 @@ class pymol_jupyter_builder:
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
         self.server.do('clean %s' % new_object_name)
-        self.server.do('sculpt %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
@@ -232,6 +232,7 @@ class pymol_jupyter_builder:
     def Crosslink_mols3(self,object1,index1,object2,index2):
         self.server.do('select at1, %s & index %s' % (object1, index1))
         self.server.do('select at2, %s & index %s' % (object2, index2))
+        self.server.do('align at2, at1')
         self.server.do('edit at1, at2')
         self.server.do('fuse')
         self.server.do('unpick')
@@ -253,7 +254,6 @@ class pymol_jupyter_builder:
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
         self.server.do('clean %s' % new_object_name)
-        self.server.do('sculpt %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
@@ -261,6 +261,7 @@ class pymol_jupyter_builder:
     def Crosslink_mols4(self,object1,index1,object2,index2):
         self.server.do('select at1, %s & index %s' % (object1, index1))
         self.server.do('select at2, %s & index %s' % (object2, index2))
+        self.server.do('align at2, at1')
         self.server.do('edit at1, at2')
         self.server.do('fuse')
         self.server.do('unpick')
@@ -282,7 +283,6 @@ class pymol_jupyter_builder:
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
         self.server.do('clean %s' % new_object_name)
-        self.server.do('sculpt %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
@@ -290,6 +290,7 @@ class pymol_jupyter_builder:
     def Crosslink_mols5(self,object1,index1,object2,index2):
         self.server.do('select at1, %s & index %s' % (object1, index1))
         self.server.do('select at2, %s & index %s' % (object2, index2))
+        self.server.do('align at2, at1')
         self.server.do('edit at1, at2')
         self.server.do('fuse')
         self.server.do('unpick')
@@ -311,7 +312,6 @@ class pymol_jupyter_builder:
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
         self.server.do('clean %s' % new_object_name)
-        self.server.do('sculpt %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
@@ -319,6 +319,7 @@ class pymol_jupyter_builder:
     def Crosslink_mols6(self,object1,index1,object2,index2):
         self.server.do('select at1, %s & index %s' % (object1, index1))
         self.server.do('select at2, %s & index %s' % (object2, index2))
+        self.server.do('align at2, at1')
         self.server.do('edit at1, at2')
         self.server.do('fuse')
         self.server.do('unpick')
@@ -340,7 +341,6 @@ class pymol_jupyter_builder:
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
         self.server.do('clean %s' % new_object_name)
-        self.server.do('sculpt %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
         return new_object_name
