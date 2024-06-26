@@ -195,6 +195,7 @@ class pymol_jupyter_builder:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
+        self.server.do('sculpt %s' % new_object_name)
         self.server.do('clean %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
@@ -224,6 +225,7 @@ class pymol_jupyter_builder:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
+        self.server.do('sculpt %s' % new_object_name)
         self.server.do('clean %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
@@ -253,6 +255,7 @@ class pymol_jupyter_builder:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
+        self.server.do('sculpt %s' % new_object_name)
         self.server.do('clean %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
@@ -282,6 +285,7 @@ class pymol_jupyter_builder:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
+        self.server.do('sculpt %s' % new_object_name)
         self.server.do('clean %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
@@ -311,6 +315,7 @@ class pymol_jupyter_builder:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
+        self.server.do('sculpt %s' % new_object_name)
         self.server.do('clean %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
@@ -340,6 +345,7 @@ class pymol_jupyter_builder:
                 break
         self.server.do('set_name %s, %s' % (object2,new_object_name))
         self.server.do('zoom %s' % new_object_name)
+        self.server.do('sculpt %s' % new_object_name)
         self.server.do('clean %s' % new_object_name)
         self.refresh_model()
         self.clear_label()
