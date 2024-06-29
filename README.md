@@ -43,3 +43,6 @@ We welcome your collaboration and input to help us enhance this project. Please 
 Biological Systems Engineering <br>
 Washington State University <br> 
 Pullman, WA, USA
+
+Read the full paper:
+https://doi.org/10.1016/j.carbon.2024.119391
