@@ -20,7 +20,7 @@ You can use any other tool to obtain the 3D representation from the PBD file obt
 > To construct the atomistic representation, you require, at a minimum, the characterization data from the ultimate analysis, <sup>13</sup>C NMR (quantitative), helium density, and BPCA yields. To validate the atomistic representation, you can use any characterization technique that gives information about the atomistic structure at the molecular level.
 
 > [!IMPORTANT]
-> Version used: Python 3.10.13 and PyMOL 2.5.5
+> Version used: Python 3.10.13 and PyMOL 2.5.5. The code is applicable for O/C ≤ 0.217 and H/C ≤ 0.627
 
 ### How to use it?
 
