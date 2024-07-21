@@ -13,8 +13,7 @@ During construction stages, the structures are in a well-dispersed grid to preve
 
 LAMMPS is used to construct a molecular dynamics-based biochar model. We employed a canonical ensemble (NVT) at 298 K to mimic a compression process by reducing the simulation box size by < 1% in each time step until the target density is achieved. The temperature ensures a nonreactive environment by preventing bonds from breaking and forming. The C/H/O/N force field is applied with a 0.07 fs timestep.
 
-You can use any other tool to obtain the 3D representation from the PBD file obtained after running Biochar.ipynb 
-#### We will soon include the procedure to get the 3D representation using OPLS instead of ReaxFF!
+You can use any other tool, methodology, or force field to obtain the 3D representation from the PBD file obtained after running Biochar.ipynb 
 
 > [!NOTE]
 > To construct the atomistic representation, you require, at a minimum, the characterization data from the ultimate analysis, <sup>13</sup>C NMR (quantitative), helium density, and BPCA yields. To validate the atomistic representation, you can use any characterization technique that gives information about the atomistic structure at the molecular level.
@@ -44,5 +43,5 @@ Biological Systems Engineering <br>
 Washington State University <br> 
 Pullman, WA, USA
 
-Read the full paper:
-https://doi.org/10.1016/j.carbon.2024.119391
+If you use any of the models or data published here, please cite:
+Sierra-Jimenez, V., Mathews, J. P., Yoo, P., Budai, A., Chejne, F., Dufour, A., & Garcia-Perez, M. (2024). Biochar data into structure: A methodology for generating large-scale atomistic representations. Carbon, 228, 119391. https://doi.org/10.1016/j.carbon.2024.119391
