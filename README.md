@@ -19,7 +19,7 @@ You can use any other tool, methodology, or force field to obtain the 3D represe
 > To construct the atomistic representation, you require, at a minimum, the characterization data from the ultimate analysis, <sup>13</sup>C NMR (quantitative), helium density, and BPCA yields. To validate the atomistic representation, you can use any characterization technique that gives information about the atomistic structure at the molecular level.
 
 > [!IMPORTANT]
-> Version used: Python 3.10.13 and PyMOL 2.5.5. The code is applicable for O/C ≤ 0.217 and H/C ≤ 0.627
+> Version used: Python 3.10.13 and PyMOL 2.5.5. The code is applicable for O/C ≤ 0.217 and H/C ≤ 0.627 on a molar basis. 
 
 ### How to use it?
 
@@ -33,7 +33,7 @@ cd BiocharAtomisticBuilder
 ###  [How to run it? :computer:](https://www.youtube.com/watch?v=V4YJs-slrXk)
 
 ### Contributing :bulb:
-We welcome your collaboration and input to help us enhance this project. Please get in touch with us if you have improvements or modifications to suggest or encounter any issues running the code. We're here to work together and resolve any problems you may face.
+We welcome your collaboration and input to help us enhance this project. Please contact us if you have improvements or modifications to suggest or if you encounter any issues running the code. We're here to work together and resolve any problems you may face.
 
 ### Contact us :email:
 **Email**: 
