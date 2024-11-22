@@ -21,7 +21,7 @@ You can use any other tool, methodology, or force field to obtain the 3D represe
 > [!IMPORTANT]
 > Version used: Python 3.10.13 and PyMOL 2.5.5. The code is applicable for molar ratios of O/C ≤ 0.217 and H/C ≤ 0.627 and elemental composition including C, H, N, and O. 
 
-### How to use it?
+### How to install it?
 
 ```
 git clone https://github.com/BiocharModeling/BiocharAtomisticModels
