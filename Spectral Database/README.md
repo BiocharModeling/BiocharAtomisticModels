@@ -1,4 +1,4 @@
 ![plot](TOC.png)
-[View the Spectral Database](https://BiocharModeling.github.io/BiocharAtomisticModels/Spectral%20Database/BiocharSpectralDatabase.html)
+[View Biochar Spectral Database](https://BiocharModeling.github.io/BiocharAtomisticModels/Spectral%20Database/BiocharSpectralDatabase.html)
 
 
