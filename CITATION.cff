@@ -1,23 +1,32 @@
 cff-version: 1.2.0
-message: "If you use this code or the approach described here, please cite the article below."
-title: "Biochar data into structure: A methodology for generating large-scale atomistic representations"
-version: 1.0.0        
-type: software
+message: "If you use this code or the approach described here, please cite the following:"
+title: "Biochar Atomistic Builder"
+version: "1.0"
+doi: "10.5281/zenodo.12160319"
+url: "https://github.com/BiocharModeling/BiocharAtomisticModels"
+date-released: "2024-06-20"
 authors:
   - family-names: "Sierra-Jimenez"
     given-names: "Valentina"
+    roles: [Producer]
   - family-names: "Mathews"
-    given-names: "Jonathan P."
+    given-names: "Jonathan"
+    roles: [Editor]
   - family-names: "Yoo"
     given-names: "Pilsun"
+    roles: [Editor]
   - family-names: "Budai"
     given-names: "Alice"
+    roles: [Data collector]
   - family-names: "Chejne"
     given-names: "Farid"
+    roles: [Supervisor]
   - family-names: "Dufour"
     given-names: "Anthony"
+    roles: [Supervisor]
   - family-names: "Garcia-Perez"
     given-names: "Manuel"
+    roles: [Supervisor]
 
 preferred-citation:
   type: article
