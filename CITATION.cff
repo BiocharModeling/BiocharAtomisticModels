@@ -3,14 +3,13 @@ message: "If you use this code or the approach described here, please cite the f
 title: "Biochar Atomistic Builder"
 version: "1.0"
 doi: "10.5281/zenodo.12160319"
-url: "https://github.com/BiocharModeling/BiocharAtomisticModels"
 date-released: "2024-06-20"
 authors:
   - family-names: "Sierra-Jimenez"
     given-names: "Valentina"
     roles: [Producer]
   - family-names: "Mathews"
-    given-names: "Jonathan"
+    given-names: "Jonathan P."
     roles: [Editor]
   - family-names: "Yoo"
     given-names: "Pilsun"
