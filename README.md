@@ -42,10 +42,6 @@ We welcome your collaboration and input to help us enhance this project. Please 
 ### Contact us :email:
 **Email**: 
 [Valentina Sierra](mailto:v.sierrajimenez@wsu.edu) <br>
-**Address:** <br>
-Biological Systems Engineering <br>
-Washington State University <br> 
-Pullman, WA, USA
 
 This research used resources from the Center for Institutional Research Computing at Washington State University.
 
