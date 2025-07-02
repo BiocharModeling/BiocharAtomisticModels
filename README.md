@@ -46,6 +46,7 @@ Pullman, WA, USA
 This research used resources from the Center for Institutional Research Computing at Washington State University.
 
 If you use any of the models or data published here, please cite:
+
 **Biochar data into structure: A methodology for generating large-scale atomistic representations**  
   Sierra-Jimenez, V., Mathews, J. P., Yoo, P., Budai, A., Chejne, F., Dufour, A., & Garcia-Perez, M. (2024). *Carbon*, 228, 119391.[https://doi.org/10.1016/j.carbon.2024.119391](https://doi.org/10.1016/j.carbon.2024.119391)
 
