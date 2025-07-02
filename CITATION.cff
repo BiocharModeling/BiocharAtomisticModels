@@ -1,6 +1,12 @@
-- type: article
-  title: "Biochar data into structure: A methodology for generating large-scale atomistic representations"
-  authors:
+cff-version: 1.2.0
+message: "If you use this code or the approach described here, please cite the following:"
+title: "Biochar data into structure: A methodology for generating large-scale atomistic representations"
+journal: "Carbon"
+volume: 228
+page: "119391"
+doi: "10.1016/j.carbon.2024.119391"
+date-published: "2024-06-20"  
+authors:
     - family-names: "Sierra-Jimenez"
       given-names: "Valentina"
     - family-names: "Mathews"
@@ -15,8 +21,4 @@
       given-names: "Anthony"
     - family-names: "Garcia-Perez"
       given-names: "Manuel"
-  journal: "Carbon"
-  volume: 228
-  page: "119391"
-  doi: "10.1016/j.carbon.2024.119391"
-  date-published: "2024-06-20"
+ 
