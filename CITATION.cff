@@ -1,27 +1,24 @@
 cff-version: 1.2.0
-message: "If you use this code or the approach described here, please cite the following:"
+message: "If you use this work, please cite the following:"
 title: "Biochar data into structure: A methodology for generating large-scale atomistic representations"
-    authors:
-      - family-names: "Sierra-Jimenez"
-        given-names: "Valentina"
-      - family-names: "Mathews"
-        given-names: "James P."
-      - family-names: "Yoo"
-        given-names: "Pilsun"
-      - family-names: "Budai"
-        given-names: "Alice"
-      - family-names: "Chejne"
-        given-names: "Farid"
-      - family-names: "Dufour"
-        given-names: "Antoine"
-      - family-names: "Garcia-Perez"
-        given-names: "Mario"
-    doi: "10.1016/j.carbon.2024.119391"
-    journal: "Carbon"
-    volume: 228
-    pages: "119391"
-    date-published: "2024-06-20"
-
-
-
- 
+type: article
+authors:
+  - family-names: "Sierra-Jimenez"
+    given-names: "Valentina"
+  - family-names: "Mathews"
+    given-names: "James P."
+  - family-names: "Yoo"
+    given-names: "Pilsun"
+  - family-names: "Budai"
+    given-names: "Alice"
+  - family-names: "Chejne"
+    given-names: "Farid"
+  - family-names: "Dufour"
+    given-names: "Antoine"
+  - family-names: "Garcia-Perez"
+    given-names: "Mario"
+doi: "10.1016/j.carbon.2024.119391"
+journal: "Carbon"
+volume: 228
+page: "119391"
+date-published: "2024-06-20"
