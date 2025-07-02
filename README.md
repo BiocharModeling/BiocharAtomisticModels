@@ -46,11 +46,8 @@ Pullman, WA, USA
 This research used resources from the Center for Institutional Research Computing at Washington State University.
 
 If you use any of the models or data published here, please cite:
+**Biochar data into structure: A methodology for generating large-scale atomistic representations**  
+  Sierra-Jimenez, V., Mathews, J. P., Yoo, P., Budai, A., Chejne, F., Dufour, A., & Garcia-Perez, M. (2024). *Carbon*, 228, 119391.[https://doi.org/10.1016/j.carbon.2024.119391](https://doi.org/10.1016/j.carbon.2024.119391)
 
-- **Biochar data into structure: A methodology for generating large-scale atomistic representations**  
-  Sierra-Jimenez, V., Mathews, J. P., Yoo, P., Budai, A., Chejne, F., Dufour, A., & Garcia-Perez, M. (2024). *Carbon*, 228, 119391.  
-  🔗 [https://doi.org/10.1016/j.carbon.2024.119391](https://doi.org/10.1016/j.carbon.2024.119391)
-
-- **Influence of acid-catalyzed dehydration and pressure on woody biomass carbonization: Exploring carbon yield, heteroatom functionalities, and biochar atomistic structure**  
-  Sierra-Jimenez, V., Macias, R. J., Mathews, J. P., Carré, V., Leclerc, S., Budai, A., Chejne, F., Castro-Gutiérrez, J., Celzard, A., Fierro, V., & Garcia-Perez, M. (2025). *Carbon*, Article 120474.  
-  🔗 [https://doi.org/10.1016/j.carbon.2025.120474](https://doi.org/10.1016/j.carbon.2025.120474)
+**Influence of acid-catalyzed dehydration and pressure on woody biomass carbonization: Exploring carbon yield, heteroatom functionalities, and biochar atomistic structure**  
+  Sierra-Jimenez, V., Macias, R. J., Mathews, J. P., Carré, V., Leclerc, S., Budai, A., Chejne, F., Castro-Gutiérrez, J., Celzard, A., Fierro, V., & Garcia-Perez, M. (2025). *Carbon*, Article 120474.[https://doi.org/10.1016/j.carbon.2025.120474](https://doi.org/10.1016/j.carbon.2025.120474)
