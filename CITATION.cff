@@ -1,0 +1,107 @@
+cff-version: 1.2.0
+message: "If you use this code or the approach described here, please cite the following:"
+title: "Biochar Atomistic Builder"
+version: "1.0"
+doi: "10.5281/zenodo.12160319"
+url: "https://github.com/BiocharModeling/BiocharAtomisticModels"
+date-released: "2024-06-20"
+authors:
+  - family-names: "Sierra-Jimenez"
+    given-names: "Valentina"
+    roles: [Producer]
+  - family-names: "Mathews"
+    given-names: "Jonathan"
+    roles: [Editor]
+  - family-names: "Yoo"
+    given-names: "Pilsun"
+    roles: [Editor]
+  - family-names: "Budai"
+    given-names: "Alice"
+    roles: [Data collector]
+  - family-names: "Chejne"
+    given-names: "Farid"
+    roles: [Supervisor]
+  - family-names: "Dufour"
+    given-names: "Anthony"
+    roles: [Supervisor]
+  - family-names: "Garcia-Perez"
+    given-names: "Manuel"
+    roles: [Supervisor]
+
+# any other works you want called out:
+references:
+  - type: article
+    title: "Biochar data into structure: A methodology for generating large-scale atomistic representations"
+    authors:
+      - family-names: "Sierra-Jimenez"
+        given-names: "Valentina"
+      - family-names: "Mathews"
+        given-names: "James P."
+      - family-names: "Yoo"
+        given-names: "Pilsun"
+      - family-names: "Budai"
+        given-names: "Alice"
+      - family-names: "Chejne"
+        given-names: "Farid"
+      - family-names: "Dufour"
+        given-names: "Antoine"
+      - family-names: "Garcia-Perez"
+        given-names: "Mario"
+    doi: "10.1016/j.carbon.2024.119391"
+    journal: "Carbon"
+    volume: 228
+    pages: "119391"
+    date-published: "2024-06-20"
+
+  - type: article
+    title: "Influence of acid-catalyzed dehydration and pressure on woody biomass carbonization: Exploring carbon yield, heteroatom functionalities, and biochar atomistic structure"
+    authors:
+      - family-names: "Sierra-Jimenez"
+        given-names: "Valentina"
+      - family-names: "Macias"
+        given-names: "Rodrigo J."
+      - family-names: "Mathews"
+        given-names: "James P."
+      - family-names: "Carré"
+        given-names: "Valentin"
+      - family-names: "Leclerc"
+        given-names: "Stéphane"
+      - family-names: "Budai"
+        given-names: "Alice"
+      - family-names: "Chejne"
+        given-names: "Farid"
+      - family-names: "Castro-Gutiérrez"
+        given-names: "José"
+      - family-names: "Celzard"
+        given-names: "André"
+      - family-names: "Fierro"
+        given-names: "Víctor"
+      - family-names: "Garcia-Perez"
+        given-names: "Mario"
+    doi: "10.1016/j.carbon.2025.120474"
+    journal: "Carbon"
+    article-number: "120474"
+    date-published: "2025-01-15"
+
+  - type: software
+    title: "Biochar Atomistic Builder"
+    authors:  # repeat the creators (optional—tooling may merge)
+      - family-names: "Sierra-Jimenez"
+        given-names: "Valentina"
+      - family-names: "Mathews"
+        given-names: "Jonathan"
+      - family-names: "Yoo"
+        given-names: "Pilsun"
+      - family-names: "Budai"
+        given-names: "Alice"
+      - family-names: "Chejne"
+        given-names: "Farid"
+      - family-names: "Dufour"
+        given-names: "Anthony"
+      - family-names: "Garcia-Perez"
+        given-names: "Manuel"
+    version: "1.0"
+    doi: "10.5281/zenodo.12160319"
+    url: "https://zenodo.org/records/12160319"
+    date-published: "2024-06-20"
+
