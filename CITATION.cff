@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this code or the approach described here, please cite the following:"
-title: "Biochar data into structure: A methodology for generating large-scale atomistic representations"
 type: article
+title: "Biochar data into structure: A methodology for generating large-scale atomistic representations"
 journal: "Carbon"
 volume: 228
 page: "119391"
