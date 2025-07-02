@@ -1,4 +1,7 @@
 # Biochar Atomistic Models
+This README/User Guide provides information about Biochar Atomistic Builder, a program that converts characterization data into 3D large-scale molecular representations of biochar.. 
+[![DOI](https://zenodo.org/badge/12160319.svg)](https://zenodo.org/badge/latestdoi/12160319)
+
 This new approach, implemented in Jupyter Notebook and visualized using PyMOL, considers chemical constraints and characterization data. It incorporates polyaromatic structures and ring defects, randomly assigns functional groups and radicals, creates a cross-linked network between clusters, and captures microporosity at a large-scale molecular level. Figure 1 illustrates the methodology employed.
 
 ![plot](./Figures/1.png)
