@@ -32,7 +32,6 @@ git clone https://github.com/BiocharModeling/BiocharAtomisticModels
 cd BiocharAtomisticBuilder
 ```
 - Install PyMol using the same environment as Python (I use conda): conda install -c conda-forge pymol-open-source
-- Open the terminal and type: pymol -R (PyMol from Python would open)
 - Then, open a jupyter notebook in another terminal, in the folder that contains all the files in this repository (BiocharAtomisticBuilder).
 - Run BPCA.ipynb and then Biochar.ipynb 
 
