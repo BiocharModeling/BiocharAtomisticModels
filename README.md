@@ -35,7 +35,7 @@ cd BiocharAtomisticBuilder
 - Then, open a jupyter notebook in another terminal, in the folder that contains all the files in this repository (BiocharAtomisticBuilder).
 - Run BPCA.ipynb and then Biochar.ipynb 
 
-###  [How to run it? :computer:](https://www.youtube.com/watch?v=V4YJs-slrXk)
+###  [How to use it? :computer:](https://www.youtube.com/watch?v=V4YJs-slrXk)
 
 ### Contributing :bulb:
 We welcome your collaboration and input to help us enhance this project. Please contact us if you have improvements or modifications to suggest or if you encounter any issues running the code. We're here to work together and resolve any problems you may face.
