@@ -11,7 +11,7 @@ The database is intended for visual exploration: you can zoom, pan, toggle spect
 
 👉 [View Biochar Spectral Database](https://BiocharModeling.github.io/BiocharAtomisticModels/Spectral%20Database/BiocharSpectralDatabase.html)
 
-## 🧭 Navigation Inside the HTML
+## Navigation Inside the HTML
 The HTML file is organized with an **interactive table of contents**:
 
 - At the top of the page, you will find clickable links for each section (IR, Raman, NMR, 2D NMR, XPS).  
@@ -21,12 +21,12 @@ The HTML file is organized with an **interactive table of contents**:
 
 This design allows quick navigation between different types of spectra without losing your place.
 
-## ⚠️ Note on Data Access
+## Note on Data Access
 The HTML files are meant for **visual comparison and inspection only**.  
 They do **not** include raw machine-readable spectral arrays.  
 
 If you are interested in raw numerical datasets, please contact:  
-📧 *valentinasierrajimenez@hotmail.com*
+[Valentina Sierra](mailto:v.sierrajimenez@wsu.edu) <br>
 
-## 📑 Citation
+## Citation
 If you use this database, please cite:  
