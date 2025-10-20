@@ -30,3 +30,4 @@ If you are interested in raw numerical datasets, please contact:
 
 ## Citation
 If you use this database, please cite:  
+Sierra-Jimenez, V., Chejne, F., & Garcia-Perez, M. (2025). First principles and neural network-driven biochar spectral database: Raman, XPS, IR, and NMR. FlatChem, 100960. https://doi.org/10.1016/j.flatc.2025.100960
