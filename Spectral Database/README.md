@@ -19,8 +19,6 @@ The HTML file is organized with an **interactive table of contents**:
 - Each section includes multiple spectra that you can zoom, pan, and hover over for details.  
 - At the end of each section, there is a **“Back to top”** button. Clicking it will return you to the main table of contents, so you can easily jump to another spectral category without manual scrolling.
 
-This design allows quick navigation between different types of spectra without losing your place.
-
 ## Note on Data Access
 The HTML files are meant for **visual comparison and inspection only**.  
 They do **not** include raw machine-readable spectral arrays.  
